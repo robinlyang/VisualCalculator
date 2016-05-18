@@ -30,28 +30,34 @@ namespace VisualCalculator
         // 4 event handlers for operations:
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Add);
         }
 
         private void BtnSubtract_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Subtract);
         }
 
         private void BtnMultiply_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Multiply);
         }
 
         private void BtnDivide_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Divide);
         }
 
         //Clear the current results
         private void BtnClear_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Start);
         }
 
         //Handle the Equals button
         private void BtnEquals_Click(object sender, RoutedEventArgs e)
         {
+            Calculate(Operation.Equals);
         }
 
     }
